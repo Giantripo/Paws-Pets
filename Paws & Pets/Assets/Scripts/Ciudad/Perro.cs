@@ -16,7 +16,7 @@ public class Perro : MonoBehaviour
 
     public Text Dialogo;
 
-
+    public Collider ColliderPerro;
     
     void Start()
     {
@@ -48,11 +48,12 @@ public class Perro : MonoBehaviour
         Dialogo.gameObject.SetActive(true);
         boton1.SetActive(true);
         boton2.SetActive(true);
+        ColliderPerro.enabled = false;
     }
 
     public void TirarPelota()
     {
-        Dialogo.text = ("");
+       
         Dialogo.text = ("El perro va corriendo por la pelota y te la regresa en la mano, parece que le gustas");
         boton1.SetActive(false);
         boton2.SetActive(false);
@@ -66,4 +67,6 @@ public class Perro : MonoBehaviour
         boton1.SetActive(false);
         boton2.SetActive(false);
     }
+
+    
 }

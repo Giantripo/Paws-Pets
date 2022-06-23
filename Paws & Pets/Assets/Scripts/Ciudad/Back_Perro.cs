@@ -9,6 +9,8 @@ public class Back_Perro : MonoBehaviour
     public GameObject Back;
     public Text Dialogo;
     public GameObject BotonGanar;
+
+    public Collider ColliderPerro;
     void Start()
     {
         
@@ -28,5 +30,6 @@ public class Back_Perro : MonoBehaviour
         Perro.MinijuegoOn = false;
         Dialogo.gameObject.SetActive(false);
         BotonGanar.SetActive(false);
+        ColliderPerro.enabled=true;
     }
 }
