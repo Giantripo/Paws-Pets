@@ -54,7 +54,7 @@ public class Perro : MonoBehaviour
     public void TirarPelota()
     {
        
-        Dialogo.text = ("El perro va corriendo por la pelota y te la regresa en la mano, parece que le gustas");
+        Dialogo.text = ("El perro va corriendo por la pelota y te la regresa en la mano parece que le gustas");
         boton1.SetActive(false);
         boton2.SetActive(false);
         BotonLlevarAlRefugio.SetActive(true);
