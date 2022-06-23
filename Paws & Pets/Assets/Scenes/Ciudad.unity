@@ -1086,6 +1086,7 @@ MonoBehaviour:
   ZoomPerro: {fileID: 1784122859}
   Back: {fileID: 1222825075}
   Dialogo: {fileID: 236230846}
+  BotonGanar: {fileID: 1989487428}
 --- !u!65 &1222825079
 BoxCollider:
   m_ObjectHideFlags: 0
