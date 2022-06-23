@@ -8,6 +8,7 @@ public class Back_Perro : MonoBehaviour
     public Camera ZoomPerro;
     public GameObject Back;
     public Text Dialogo;
+    public GameObject BotonGanar;
     void Start()
     {
         
@@ -26,5 +27,6 @@ public class Back_Perro : MonoBehaviour
         Back.SetActive(false);
         Perro.MinijuegoOn = false;
         Dialogo.gameObject.SetActive(false);
+        BotonGanar.SetActive(false);
     }
 }
