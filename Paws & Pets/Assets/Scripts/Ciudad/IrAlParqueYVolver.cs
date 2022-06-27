@@ -6,6 +6,9 @@ public class IrAlParqueYVolver : MonoBehaviour
 {
     public GameObject CiudadBackGround;
     public GameObject Flecha;
+    //public GameObject Flecha2;
+    //public Sprite FlechaJardin;
+    //public Sprite FlechaJardin2;
     //public GameObject Jardin;
     void Start()
     {
@@ -22,14 +25,18 @@ public class IrAlParqueYVolver : MonoBehaviour
     {
         if (CiudadBackGround.transform.position.x == -22.53f)
         {
+            
             CiudadBackGround.transform.position = new Vector2(0.01f, 0);
-            Flecha.transform.position = new Vector2(9.99f, -1.78f);
+            Flecha.transform.position = new Vector2(9.3f, -1.78f);
+         
+            Flecha.transform.Rotate(new Vector3(0, -180, 0));
         }
         else
         {
             CiudadBackGround.transform.position = new Vector2(-22.53f, 0);
-            Flecha.transform.position = new Vector2(-9.83f, -1.78f);
-            
+            Flecha.transform.position = new Vector2(-9.3f, -1.78f);
+            Flecha.transform.Rotate(new Vector3(0, 180, 0));
+           
         }
         
     }

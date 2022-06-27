@@ -8,6 +8,7 @@ public class Back_Perro : MonoBehaviour
     public Camera ZoomPerro;
     public GameObject Back;
     public Text Dialogo;
+    public GameObject Panel;
     public GameObject BotonGanar;
 
     public Collider ColliderPerro;
@@ -28,7 +29,7 @@ public class Back_Perro : MonoBehaviour
         ZoomPerro.orthographicSize = 5.034862f;
         Back.SetActive(false);
         Perro.MinijuegoOn = false;
-        Dialogo.gameObject.SetActive(false);
+        Panel.SetActive(false);
         BotonGanar.SetActive(false);
         ColliderPerro.enabled=true;
     }

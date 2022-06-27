@@ -15,13 +15,14 @@ public class Perro : MonoBehaviour
     public GameObject BotonLlevarAlRefugio;
 
     public Text Dialogo;
+    public GameObject Panel;
 
     public Collider ColliderPerro;
     
     void Start()
     {
         Back.SetActive(false);
-        Dialogo.gameObject.SetActive(false);
+        Panel.SetActive(false);
         BotonLlevarAlRefugio.SetActive(false);
     }
 
@@ -43,9 +44,10 @@ public class Perro : MonoBehaviour
         ZoomPerro.transform.position = new Vector3(2.326483f, -2.22f, -10);
         ZoomPerro.orthographicSize = 2.5f;
         Back.SetActive(true);
+        Dialogo.gameObject.SetActive(true);
 
         Dialogo.text = ("Ves un perro moviendo la cola, pero parece que no quiere acercarse.\n¿Que haras para romper el hielo?");
-        Dialogo.gameObject.SetActive(true);
+        Panel.SetActive(true);
         boton1.SetActive(true);
         boton2.SetActive(true);
         ColliderPerro.enabled = false;
