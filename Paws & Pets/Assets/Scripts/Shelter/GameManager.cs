@@ -5,33 +5,50 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject Perro;
-    public Transform Coord1;
-    public Transform Coord2;
-    public Transform Coord3;
+    public GameObject Gato;
+    public Transform CoordP1;
+    public Transform CoordP2;
+    public Transform CoordP3;
+
+    public Transform CoordG1;
+    public Transform CoordG2;
+    public Transform CoordG3;
 
     public GameObject BackGround;
 
     void Start()
     {
-        if (VolverRefugio.ContPerros>0)
+        GatoNuevo();
+        PerroNuevo();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void PerroNuevo()
+    {
+        if (VolverRefugio.ContPerros > 0)
         {
             if (VolverRefugio.ContPerros == 1)
             {
                 //Perro.transform.SetParent(BackGround.gameObject.transform);
-                Instantiate(Perro, Coord1.position, Quaternion.identity, BackGround.transform);
-                
+                Instantiate(Perro, CoordP1.position, Quaternion.identity, BackGround.transform);
+
 
             }
-            else if(VolverRefugio.ContPerros == 2)
+            else if (VolverRefugio.ContPerros == 2)
             {
-                Instantiate(Perro, Coord1.position, Quaternion.identity, BackGround.transform);
-                Instantiate(Perro, Coord2.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Perro, CoordP1.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Perro, CoordP2.position, Quaternion.identity, BackGround.transform);
             }
             else if (VolverRefugio.ContPerros >= 3)
             {
-                Instantiate(Perro, Coord1.position, Quaternion.identity, BackGround.transform);
-                Instantiate(Perro, Coord2.position, Quaternion.identity, BackGround.transform);
-                Instantiate(Perro, Coord3.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Perro, CoordP1.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Perro, CoordP2.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Perro, CoordP3.position, Quaternion.identity, BackGround.transform);
             }
 
         }
@@ -41,9 +58,33 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GatoNuevo()
     {
-        
+        if (VolverRefugio.ContGatos > 0)
+        {
+            if (VolverRefugio.ContGatos == 1)
+            {
+                //Perro.transform.SetParent(BackGround.gameObject.transform);
+                Instantiate(Gato, CoordG1.position, Quaternion.identity, BackGround.transform);
+
+
+            }
+            else if (VolverRefugio.ContGatos == 2)
+            {
+                Instantiate(Gato, CoordG1.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Gato, CoordG2.position, Quaternion.identity, BackGround.transform);
+            }
+            else if (VolverRefugio.ContGatos >= 3)
+            {
+                Instantiate(Gato, CoordG1.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Gato, CoordG2.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Gato, CoordG3.position, Quaternion.identity, BackGround.transform);
+            }
+
+        }
+        else
+        {
+            Gato = null;
+        }
     }
 }

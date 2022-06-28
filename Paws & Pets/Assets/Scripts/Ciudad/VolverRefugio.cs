@@ -23,6 +23,7 @@ public class VolverRefugio : MonoBehaviour
         ContPerros++;
         if (ContPerros > 3)
         {
+            Debug.Log("No tienes espacio en el refugio para llevarte este perro, debes dar uno en adopcion antes.");
             ContPerros = 3;
         }
         SceneManager.LoadScene(2);
@@ -32,6 +33,7 @@ public class VolverRefugio : MonoBehaviour
     {
         if (ContGatos > 3)
         {
+            Debug.Log("No tienes espacio en el refugio para llevarte este gato, debes dar uno en adopcion antes.");
             ContGatos = 3;
         }
         ContGatos++;
