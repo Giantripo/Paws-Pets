@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.UI;
 
 public class Balde_MinijuegoCangrejo : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class Balde_MinijuegoCangrejo : MonoBehaviour
     public Collider ColliderCangrejo;
     public Animator Crab;
 
-    public 
+    public Text Dialogo;
+
+    //public 
 
     void Start()
     {
@@ -34,5 +37,6 @@ public class Balde_MinijuegoCangrejo : MonoBehaviour
         Panael.SetActive(true);
         Crab.gameObject.SetActive(true);
         Back.SetActive(true);
+        Dialogo.text = ("Ves un cangrejo que se escondia detras de un balde.\n parece que tiene ganas de pelear");
     }
 }

@@ -1045,6 +1045,7 @@ MonoBehaviour:
   Panael: {fileID: 1979173394}
   ColliderCangrejo: {fileID: 1389772796}
   Crab: {fileID: 1555510697}
+  Dialogo: {fileID: 1506036312}
 --- !u!1 &1447463426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,7 +1187,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 80cb8aae19e10864d919ce39688e1e30, type: 3}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1913,6 +1914,7 @@ GameObject:
   - component: {fileID: 2016173057}
   - component: {fileID: 2016173056}
   - component: {fileID: 2016173055}
+  - component: {fileID: 2016173058}
   m_Layer: 0
   m_Name: "modelo_ca\xF1a_01"
   m_TagString: Untagged
@@ -1998,6 +2000,18 @@ Transform:
   m_Father: {fileID: 1309000950}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016173058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016173054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff663c0139a277478aef56a25fa2662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2081782690
 GameObject:
   m_ObjectHideFlags: 0
