@@ -21,6 +21,6 @@ public class PuertaShelter : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 }

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CañaDePescar : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject Fondo;
+    public GameObject Anzuelo;
     void Start()
     {
-        
+        Fondo.SetActive(false);
+        Anzuelo.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,6 +20,7 @@ public class CañaDePescar : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
+        Fondo.SetActive(true);
+        Anzuelo.SetActive(true);
     }
 }
