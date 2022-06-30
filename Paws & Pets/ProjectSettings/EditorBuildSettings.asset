@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shelter.unity
     guid: 2a569d760a740364fa7925c9aec2ee1f
+  - enabled: 1
+    path: Assets/Scenes/Playa.unity
+    guid: 81ed2f350190a7548bbf164f44c02f08
+  - enabled: 1
+    path: Assets/Scenes/Valle.unity
+    guid: b569dab75d2ab7d47a00835ebc91296e
+  - enabled: 1
+    path: Assets/Scenes/MapaMundi.unity
+    guid: d6c240666e4edc4429cfb007930b7585
   m_configObjects: {}
