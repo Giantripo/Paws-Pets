@@ -21,6 +21,16 @@ public class CañaDePescar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (BackGround.transform.position.x == 22.5f)
+        //{
+        //    Jugando = true;
+        //}
+        //else
+        //{
+        //    Jugando = false;
+        //}
+
+
         if (Anzuelo.transform.position.y < -2)
         {
             Anzuelo.transform.position = new Vector2(2.6f, -2f);
@@ -34,13 +44,18 @@ public class CañaDePescar : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Fondo.SetActive(true);
-        Anzuelo.SetActive(true);
-        Jugando = true;
+        //if (Jugando)
+        //{
+            Fondo.SetActive(true);
+            Anzuelo.SetActive(true);
+        //}
+      
+        
     }
 
     private void OnMouseDrag()
     {
+      
         Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
         objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Anzuelo.transform.position = objPosition;

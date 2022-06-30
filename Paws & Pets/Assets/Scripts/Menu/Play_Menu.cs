@@ -21,4 +21,9 @@ public class Play_Menu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    private void OnMouseDown()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
