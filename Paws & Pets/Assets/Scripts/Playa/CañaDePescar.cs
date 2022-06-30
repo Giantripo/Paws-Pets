@@ -8,6 +8,7 @@ public class CañaDePescar : MonoBehaviour
     public GameObject Fondo;
     public GameObject Anzuelo;
     public bool Jugando;
+    Vector2 objPosition;
 
     public new Vector2 Dedo;
 
@@ -20,17 +21,15 @@ public class CañaDePescar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Jugando/* && BackGround.transform.position.x == 22.5f*/)
-        //{
-            //MecanicaCaña();
-            //Dedo.y = Input.mousePosition.y;
-            ////Dedo.y = Anzuelo.transform.position.y;
-            //Anzuelo.transform.position = Dedo;
-        //}
-        //else
-        //{
-        //    Jugando = false;
-        //}
+        if (Anzuelo.transform.position.y < -2)
+        {
+            Anzuelo.transform.position = new Vector2(2.6f, -2f);
+        }
+
+        if (Anzuelo.transform.position.y > 3.3f)
+        {
+            Anzuelo.transform.position = new Vector2(2.6f, 3.3f);
+        }
     }
 
     private void OnMouseDown()
@@ -42,10 +41,11 @@ public class CañaDePescar : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y +180 /*+ transform.position.z*/);
-        Vector2 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
+        objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Anzuelo.transform.position = objPosition;
-        
+
+       
     }
 
 
