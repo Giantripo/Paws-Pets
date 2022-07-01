@@ -7,7 +7,7 @@ public class CañaDePescar : MonoBehaviour
     public GameObject BackGround;
     public GameObject Fondo;
     public GameObject Anzuelo;
-    public bool Jugando;
+    public static bool Jugando;
     Vector2 objPosition;
 
     public new Vector2 Dedo;
@@ -48,9 +48,10 @@ public class CañaDePescar : MonoBehaviour
         //{
             Fondo.SetActive(true);
             Anzuelo.SetActive(true);
+            Jugando = true;
         //}
-      
-        
+
+
     }
 
     private void OnMouseDrag()
