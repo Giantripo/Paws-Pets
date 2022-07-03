@@ -63,4 +63,9 @@ public class VolverRefugio : MonoBehaviour
         //ContGatos++;
         SceneManager.LoadScene(2);
     }
+
+    public void MapaMundi()
+    {
+        SceneManager.LoadScene(5);
+    }
 }
