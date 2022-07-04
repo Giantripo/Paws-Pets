@@ -5,33 +5,57 @@ using UnityEngine;
 public class Anzuelo : MonoBehaviour
 {
     public bool Pesco;
-    public GameObject Pez;
-    public Rigidbody pescado;
+    public Rigidbody Pez;
+    //public Rigidbody pescado;
+    public GameObject hilo;
     //void Start()
     //{
 
     //}
 
     //// Update is called once per frame
-    //void Update()
-    //{
-    //    if (Pesco)
-    //    {
-    //        Pez.transform.position = this.transform.position;
+    void Update()
+    {
+        if (Pesco)
+        {
+     
+            //se frenee
+        }
+        else
+        {
+       
+        }
+    }
 
-    //    }
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pez"))
+        {
+            Pesco = true;
+            //Pez.isKinematic = true;
 
-    //private void OnTriggerEnter(Collider other)
+            other.transform.SetParent(hilo.transform);
+            
+
+            //Pez.position = hilo.transform.position;
+        }
+
+        //}
+
+
+    }
+
+    //private void OnTriggerExit(Collider other)
     //{
     //    if (other.gameObject.CompareTag("Pez"))
     //    {
-    //        Pesco = true;
-    //        //other.transform.position = Pez.transform.position;
-           
+    //        Pesco = false;
+
+    //        //Pez.position = hilo.transform.position;
     //    }
 
+    //    //}
+
+
     //}
-
-
 }
