@@ -10,7 +10,7 @@ public class CañaDePescar : MonoBehaviour
     public static bool Jugando;
     Vector2 objPosition;
 
-    public new Vector2 Dedo;
+    //public new Vector2 Dedo;
 
     void Start()
     {
@@ -36,8 +36,9 @@ public class CañaDePescar : MonoBehaviour
             Anzuelo.transform.position = new Vector2(2.6f, -2f);
         }
 
-        if (Anzuelo.transform.position.y > 3.3f)
+        if (Anzuelo.transform.position.y > 3.3f )
         {
+
             Anzuelo.transform.position = new Vector2(2.6f, 3.3f);
         }
     }

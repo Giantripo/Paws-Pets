@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Anzuelo : MonoBehaviour
 {
-    public bool Pesco;
+    public static bool Pesco;
     public Rigidbody Pez;
     //public Rigidbody pescado;
     public GameObject hilo;
+    public static int contPez;
     //void Start()
     //{
 
@@ -27,7 +28,12 @@ public class Anzuelo : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void DestroyPez()
+    {
+       
+    }
+
+    public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pez"))
         {
@@ -35,8 +41,9 @@ public class Anzuelo : MonoBehaviour
             //Pez.isKinematic = true;
 
             other.transform.SetParent(hilo.transform);
-            
+            other.attachedRigidbody.isKinematic = true;
 
+            Debug.Log("true");
             //Pez.position = hilo.transform.position;
         }
 
@@ -45,17 +52,17 @@ public class Anzuelo : MonoBehaviour
 
     }
 
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject.CompareTag("Pez"))
-    //    {
-    //        Pesco = false;
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pez"))
+        {
+            Pesco = false;
+            Debug.Log("Falso");
+            //Pez.position = hilo.transform.position;
+        }
 
-    //        //Pez.position = hilo.transform.position;
-    //    }
-
-    //    //}
+        //}
 
 
-    //}
+    }
 }
