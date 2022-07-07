@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tienda : MonoBehaviour
+public class CerrarTienda : MonoBehaviour
 {
-    public GameObject TiendaAbierta;
+    public GameObject Tienda;
     void Start()
     {
-        TiendaAbierta.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -18,10 +18,6 @@ public class Tienda : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Abrir_Tienda");
-        TiendaAbierta.SetActive(true);
-
+        Tienda.SetActive(false);
     }
-
-
 }

@@ -50,10 +50,21 @@ public class Balde_MinijuegoCangrejo : MonoBehaviour
 
     public void PeliarCangrejo()
     {
-        Dialogo.text = ("Lo enfrentas con tus guantes a prueba de pelliscos.\nTe has ganado su respeto y te acompaña.");
+
+        if (GuantesComprar.Guantes)
+        {
+            Dialogo.text = ("Lo enfrentas con tus guantes a prueba de pelliscos.\nTe has ganado su respeto y te acompaña.");
+            Boton3.SetActive(true);
+        }
+        else
+        {
+            Dialogo.text = ("Lo enfrentas pero parece que no tienes guantes\nEl cangrejo te humilla y se aleja");
+            Boton3.SetActive(false);
+        }
+     
         Boton1.SetActive(false);
         Boton2.SetActive(false);
-        Boton3.SetActive(true);
+      
     }
 
     public void Acariciar()

@@ -14,6 +14,8 @@ public class Back_Cangrejo : MonoBehaviour
 
     public GameObject panel;
 
+    public GameObject BotonGanar;
+
     void Start()
     {
         
@@ -35,6 +37,6 @@ public class Back_Cangrejo : MonoBehaviour
         //BotonGanar.SetActive(false);
         ColliderCangrejo.enabled = true;
         panel.SetActive(false);
-
+        BotonGanar.SetActive(false);
     }
 }

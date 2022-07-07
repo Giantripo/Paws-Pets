@@ -55,18 +55,21 @@ public class Gato : MonoBehaviour
 
     public void DarPescado()
     {
-        //if (pescado > 0 )
-        //{
-
-        //}
-        //else
-        //{
-        //    Dialogo.text = ("no tienes pescado");
-        //}
-        Dialogo.text = ("Sacas un pescado fresco\nEn el instante en el que el gato lo huele comienza a acercarse mientras maulla\nParece que le gustas");
+        if (Anzuelo.contPez++ > 0)
+        {
+            Dialogo.text = ("Sacas un pescado fresco\nEn el instante en el que el gato lo huele comienza a acercarse mientras maulla\nParece que le gustas");
+            Anzuelo.contPez--;
+            BotonLlevarAlRefugio.SetActive(true);
+        }
+        else
+        {
+            Dialogo.text = ("No tienes ningun pescado\nEl gato se aleja");
+            BotonLlevarAlRefugio.SetActive(false);
+        }
+       
         boton1.SetActive(false);
         boton2.SetActive(false);
-        BotonLlevarAlRefugio.SetActive(true);
+       
     }
 
     public void Acariciar()
