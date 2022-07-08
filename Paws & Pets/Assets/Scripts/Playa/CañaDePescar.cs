@@ -32,8 +32,13 @@ public class CañaDePescar : MonoBehaviour
         //    Jugando = false;
         //}
 
+        if (AnzueloComprar.ContAnzuelos <= 0)
+        {
+            Jugando = false;
+            Anzuelo.SetActive(false);
+        }
 
-        if (Anzuelo.transform.position.y < -2)
+            if (Anzuelo.transform.position.y < -2)
         {
             Anzuelo.transform.position = new Vector2(2.6f, -2f);
         }
@@ -49,25 +54,40 @@ public class CañaDePescar : MonoBehaviour
     {
         //if (Jugando)
         //{
+            
+        //}
+        if (AnzueloComprar.ContAnzuelos > 0)
+        {
             Fondo.SetActive(true);
             Anzuelo.SetActive(true);
             Jugando = true;
-        //}
-
-
+           
+        }
+        else
+        {
+            Debug.Log("Necesitas Anzuelos");
+        }
     }
 
     private void OnMouseDrag()
     {
-        if (Jugando)
+        //if (AnzueloComprar.ContAnzuelos > 0)
         {
 
 
-            Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
-            objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            Anzuelo.transform.position = objPosition;
+            if (Jugando)
+            {
+
+
+                Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
+                objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+                Anzuelo.transform.position = objPosition;
+            }
+        //}
+        //else
+        //{
+        //    Debug.Log("Necesitas Anzuelos");
         }
-       
     }
 
 

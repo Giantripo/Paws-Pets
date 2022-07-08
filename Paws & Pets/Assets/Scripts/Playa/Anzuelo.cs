@@ -47,6 +47,16 @@ public class Anzuelo : MonoBehaviour
             //Pez.position = hilo.transform.position;
         }
 
+        if (other.gameObject.CompareTag("Piedra"))
+        {
+            AnzueloComprar.ContAnzuelos--;
+        }
+
+        if (other.gameObject.CompareTag("Zapato"))
+        {
+            AnzueloComprar.ContAnzuelos--;
+        }
+
         //}
 
 
