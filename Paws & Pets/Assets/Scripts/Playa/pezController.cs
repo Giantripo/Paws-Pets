@@ -23,6 +23,11 @@ public class pezController : MonoBehaviour
             Debug.Log(Anzuelo.contPez);
             this.gameObject.SetActive(false);
         }
+
+        if (!CañaDePescar.Jugando)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

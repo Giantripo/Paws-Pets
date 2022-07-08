@@ -10,6 +10,8 @@ public class CañaDePescar : MonoBehaviour
     public static bool Jugando;
     Vector2 objPosition;
 
+    public GameObject PlayaFondo;
+
     //public new Vector2 Dedo;
 
     void Start()
@@ -57,11 +59,14 @@ public class CañaDePescar : MonoBehaviour
 
     private void OnMouseDrag()
     {
-      
-        Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
-        objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        Anzuelo.transform.position = objPosition;
+        if (Jugando)
+        {
 
+
+            Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
+            objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            Anzuelo.transform.position = objPosition;
+        }
        
     }
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class IrAMuelle : MonoBehaviour
 {
     public GameObject PlayaFondo;
+    public GameObject HiloCaña;
     void Start()
     {
         
@@ -24,6 +25,10 @@ public class IrAMuelle : MonoBehaviour
             //Flecha.transform.position = new Vector2(9.5f, -1.78f);
             ////OtraFlecha.transform.position = new Vector2(9.8f, -1.78f);
             //Flecha.transform.Rotate(new Vector3(0, -180, 0));
+            Debug.Log("Termino todo");
+            CañaDePescar.Jugando = false;
+            HiloCaña.SetActive(false);
+
         }
         else
         {
@@ -31,7 +36,7 @@ public class IrAMuelle : MonoBehaviour
             //Flecha.transform.position = new Vector2(-9.5f, -1.99f);
             ////OtraFlecha.transform.position = new Vector2(9.8f, -80.78f);
             //Flecha.transform.Rotate(new Vector3(0, 180, 0));
-
+            
         }
     }
 }

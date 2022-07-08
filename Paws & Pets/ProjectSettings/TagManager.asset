@@ -7,6 +7,8 @@ TagManager:
   - Destroy
   - Anzuelo
   - Pez
+  - Zapato
+  - Piedra
   layers:
   - Default
   - TransparentFX
