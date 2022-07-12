@@ -267,7 +267,9 @@ MonoBehaviour:
   - {fileID: 3561598732805088464, guid: 16ecde33c5025fa4a988521bbf817a71, type: 3}
   - {fileID: 7496829813433057386, guid: d0afbb19888177a4c9c58c14af158fe6, type: 3}
   - {fileID: 2394642402287234545, guid: e826f11de40d3864a940b32ef43702ce, type: 3}
-  timeToSpawn: 2
+  hoja: {fileID: 1068174428049265912, guid: aa2134b2b042d794aa9699ec40a7693e, type: 3}
+  xBounds: 11
+  yBounds: 4
 --- !u!4 &146794821
 Transform:
   m_ObjectHideFlags: 0

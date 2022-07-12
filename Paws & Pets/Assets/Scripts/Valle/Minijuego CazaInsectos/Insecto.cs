@@ -15,13 +15,5 @@ public class Insecto : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "modelo_cazainsectos_01")
-        {
-            Destroy(this.gameObject);
-        }
-    }
+    }   
 }

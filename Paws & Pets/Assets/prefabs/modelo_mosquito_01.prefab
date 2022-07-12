@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3229096979888999890}
   m_Layer: 0
   m_Name: modelo_mosquito_01
-  m_TagString: Untagged
+  m_TagString: Insecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2394642402287234545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.415295, y: -0.47583377, z: 0}
-  m_LocalScale: {x: 0.35411, y: 0.35411, z: 0.35411}
+  m_LocalScale: {x: -0.35411, y: 0.35411, z: 0.35411}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8fa2c529d90704490b951223f5488f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insecto_speed: 5
+  insecto_speed: 10
 --- !u!50 &1306288335344279031
 Rigidbody2D:
   serializedVersion: 4
