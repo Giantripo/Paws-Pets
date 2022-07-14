@@ -10,41 +10,61 @@ public class Spawner : MonoBehaviour
     //private float currentTimeToSpawn; 
 
     public float xBounds, yBounds;
-    Vector2 objPosition;    
+    Vector2 objPosition;
+    public float timer;
     void Start()
     {
-        StartCoroutine(SpawnObject());
+        timer = Random.Range(1, 3);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if(currentTimeToSpawn > 0)
-        //{
-        //    currentTimeToSpawn -= Time.deltaTime;
-        //}
+        timer -= Time.deltaTime;
+        if(Bichos_Minijuegos.b_minijuegoCazainsectos == true)
+        {
+            Instantiator();
+        }        
         //else
         //{
-
-        //SpawnObject();
-            //currentTimeToSpawn = timeToSpawn;
+        //    Debug.Log("false");
         //}
     }
 
-    IEnumerator SpawnObject()
+    //IEnumerator SpawnObject()
+    //{
+    //    if (Bichos_Minijuegos.b_minijuegoCazainsectos == true)
+    //    {
+    //        yield return new WaitForSeconds(Random.Range(1, 3));
+    //        int randomnum = Random.Range(0, 4);
+    //        if (Random.value <= .6f)
+    //        {
+    //            Instantiate(insecto[randomnum], new Vector2(xBounds, Random.Range(-yBounds, yBounds)), Quaternion.identity);
+    //        }
+    //        else
+    //        {
+    //            Instantiate(hoja, new Vector2(xBounds, Random.Range(-yBounds, yBounds)), Quaternion.identity);
+    //        }
+    //        //Instantiate(insecto[randomnum], transform.position, insecto[randomnum].transform.rotation);
+    //        StartCoroutine(SpawnObject());
+    //    }        
+    //}
+
+    public void Instantiator()
     {
-        yield return new WaitForSeconds(Random.Range(1, 3));
-        int randomnum = Random.Range(0,4);
-        if(Random.value <= .6f)
+        if(timer <= 0)
         {
-            Instantiate(insecto[randomnum], new Vector2(xBounds, Random.Range(-yBounds, yBounds)),Quaternion.identity);
-        }
-        else
-        {
-            Instantiate(hoja, new Vector2(xBounds, Random.Range(-yBounds, yBounds)), Quaternion.identity);
-        }
-        //Instantiate(insecto[randomnum], transform.position, insecto[randomnum].transform.rotation);
-        StartCoroutine(SpawnObject());
+            int randomnum = Random.Range(0, 4);
+            if (Random.value <= .6f)
+            {
+                Instantiate(insecto[randomnum], new Vector2(xBounds, Random.Range(-yBounds, yBounds)), Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(hoja, new Vector2(xBounds, Random.Range(-yBounds, yBounds)), Quaternion.identity);
+            }
+            timer = Random.Range(1, 3);
+        }        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
