@@ -64,13 +64,13 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private void OnMouseDrag()
-    {
+    //private void OnMouseDrag()
+    //{
 
-        Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
-        objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        this.gameObject.transform.position = objPosition;
+    //    Vector2 mousePosition = new Vector2(988f, Input.mousePosition.y + 180 /*+ transform.position.z*/);
+    //    objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+    //    this.gameObject.transform.position = objPosition;
 
 
-    }
+    //}
 }

@@ -11,9 +11,12 @@ public class Insecto : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         rigidbody.velocity = transform.right * insecto_speed;
     }
-   
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }   
+        if(collision.name == "modelo_cazainsectos_01")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

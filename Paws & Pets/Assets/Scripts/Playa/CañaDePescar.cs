@@ -32,11 +32,11 @@ public class CañaDePescar : MonoBehaviour
         //    Jugando = false;
         //}
 
-        if (AnzueloComprar.ContAnzuelos <= 0)
-        {
-            Jugando = false;
-            Anzuelo.SetActive(false);
-        }
+        //if (AnzueloComprar.ContAnzuelos <= 0)
+        //{
+        //    Jugando = false;
+        //    Anzuelo.SetActive(false);
+        //}
 
             if (Anzuelo.transform.position.y < -2)
         {
@@ -56,17 +56,17 @@ public class CañaDePescar : MonoBehaviour
         //{
             
         //}
-        if (AnzueloComprar.ContAnzuelos > 0)
-        {
+        //if (AnzueloComprar.ContAnzuelos > 0)
+        //{
             Fondo.SetActive(true);
             Anzuelo.SetActive(true);
             Jugando = true;
            
-        }
-        else
-        {
-            Debug.Log("Necesitas Anzuelos");
-        }
+        //}
+        //else
+        //{
+        //    Debug.Log("Necesitas Anzuelos");
+        //}
     }
 
     private void OnMouseDrag()
