@@ -5,9 +5,10 @@ using UnityEngine;
 public class Camaleon_Minijuego : MonoBehaviour
 {
     public GameObject PlayaFondo;
+    public GameObject Panel;
     void Start()
     {
-        
+        Panel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,9 +29,8 @@ public class Camaleon_Minijuego : MonoBehaviour
         else
         {
             PlayaFondo.transform.position = new Vector2(0f, -10.7f);
-            //Flecha.transform.position = new Vector2(-9.5f, -1.99f);
-            ////OtraFlecha.transform.position = new Vector2(9.8f, -80.78f);
-            //Flecha.transform.Rotate(new Vector3(0, 180, 0));
+
+            Panel.SetActive(true);
 
         }
     }
