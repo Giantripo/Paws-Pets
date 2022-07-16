@@ -15,29 +15,25 @@ public class IrValle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BotasComprar.Botas)
+
+        if (!BotasComprar.Botas)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Valle.color = Color.white;
-                SceneManager.LoadScene(4);
-            }
-           
+          Valle.color = Color.black;
+          Debug.Log("No puedes pasar sin botas");
+
         }
         else
         {
-          
-                Valle.color = Color.black;
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-                Debug.Log("No puedes pasar sin botas");
-            
-        
+            Valle.color = Color.white;
         }
     }
 
     private void OnMouseDown()
     {
-        
-        
+
+        if (BotasComprar.Botas)
+        {
+                SceneManager.LoadScene(4);
+        }
     }
 }
