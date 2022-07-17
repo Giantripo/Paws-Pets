@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapaMundi.unity
     guid: d6c240666e4edc4429cfb007930b7585
+  - enabled: 1
+    path: Assets/Scenes/CurarAnimal.unity
+    guid: 418d2e8e79840264c9e3cfebdb83cf37
   m_configObjects: {}
