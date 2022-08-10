@@ -18,8 +18,8 @@ public class CerrarPerrosCuracion : MonoBehaviour
 
     private void OnMouseDown()
     {
-        PerroShelter.PerroCuracion = false;
-        ZoomPerro.gameObject.SetActive(false);
+        //PerroShelter.PerroCuracion = false;
+        //ZoomPerro.gameObject.SetActive(false);
 
 
         //Destroy(this.gameObject);

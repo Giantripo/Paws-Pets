@@ -27,8 +27,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject BackGround;
 
+    public GameObject Advertencia;
+
+    private float contCartel;
+
     void Start()
     {
+        Advertencia.SetActive(false);
         GatoNuevo();
         PerroNuevo();
         CangrejoNuevo();
@@ -38,7 +43,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Comer.NoComida)
+        {
+            Advertencia.SetActive(true);
+            contCartel += Time.deltaTime;
+            if (contCartel>1.5)
+            {
+                Comer.NoComida = false;
+                Advertencia.SetActive(false);
+                contCartel = 0;
+            }
+          
+        }
+      
     }
 
     public void PerroNuevo()
