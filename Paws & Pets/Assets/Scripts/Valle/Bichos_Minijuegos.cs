@@ -7,6 +7,7 @@ public class Bichos_Minijuegos : MonoBehaviour
     public GameObject PlayaFondo;
     public static bool b_minijuegoCazainsectos;
     public GameObject mapa;
+    public static int bichosCont;
 
     void Start()
     {

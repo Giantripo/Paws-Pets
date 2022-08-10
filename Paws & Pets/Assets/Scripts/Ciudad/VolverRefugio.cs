@@ -25,7 +25,7 @@ public class VolverRefugio : MonoBehaviour
         ContPerros++;
         if (ContPerros > 3)
         {
-            Debug.Log("No tienes espacio en el refugio para llevarte este perro, debes dar uno en adopcion antes.");
+            Debug.Log("No tienes espacio en el refugio para llevarte este Perro, debes dar uno en adopcion antes.");
             ContPerros = 3;
         }
         SceneManager.LoadScene(2);
@@ -35,7 +35,7 @@ public class VolverRefugio : MonoBehaviour
     {
         if (ContGatos > 3)
         {
-            Debug.Log("No tienes espacio en el refugio para llevarte este gato, debes dar uno en adopcion antes.");
+            Debug.Log("No tienes espacio en el refugio para llevarte este Gato, debes dar uno en adopcion antes.");
             ContGatos = 3;
         }
         ContGatos++;
@@ -46,7 +46,7 @@ public class VolverRefugio : MonoBehaviour
     {
         if (ContCangrejos > 3)
         {
-            Debug.Log("No tienes espacio en el refugio para llevarte este gato, debes dar uno en adopcion antes.");
+            Debug.Log("No tienes espacio en el refugio para llevarte este Cangrejo, debes dar uno en adopcion antes.");
             ContCangrejos = 3;
         }
         ContCangrejos++;
@@ -55,12 +55,12 @@ public class VolverRefugio : MonoBehaviour
 
     public void VolverConCamaleon()
     {
-        //if (ContGatos > 3)
-        //{
-        //    Debug.Log("No tienes espacio en el refugio para llevarte este gato, debes dar uno en adopcion antes.");
-        //    ContGatos = 3;
-        //}
-        //ContGatos++;
+        if (ContCamaleones > 3)
+        {
+            Debug.Log("No tienes espacio en el refugio para llevarte este Camaleon, debes dar uno en adopcion antes.");
+            ContCamaleones = 3;
+        }
+        ContCamaleones++;
         SceneManager.LoadScene(2);
     }
 

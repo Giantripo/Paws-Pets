@@ -27,6 +27,7 @@ public class Insecto : MonoBehaviour
             }
             if(this.gameObject.tag == "Insecto")
             {
+                Bichos_Minijuegos.bichosCont++;
                 MonyeController.money++;
                 Destroy(this.gameObject);
             }            

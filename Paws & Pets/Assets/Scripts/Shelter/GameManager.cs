@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public GameObject Perro;
     public GameObject Gato;
     public GameObject Cangrejo;
+    public GameObject Camaleon;
+
     public Transform CoordP1;
     public Transform CoordP2;
     public Transform CoordP3;
@@ -19,6 +21,10 @@ public class GameManager : MonoBehaviour
     public Transform CoordCJ2;
     public Transform CoordCJ3;
 
+    public Transform CoordCaJ1;
+    public Transform CoordCaJ2;
+    public Transform CoordCaJ3;
+
     public GameObject BackGround;
 
     void Start()
@@ -26,6 +32,7 @@ public class GameManager : MonoBehaviour
         GatoNuevo();
         PerroNuevo();
         CangrejoNuevo();
+        CamaleonNuevo();
     }
 
     // Update is called once per frame
@@ -126,31 +133,31 @@ public class GameManager : MonoBehaviour
 
     public void CamaleonNuevo()
     {
-        //if (VolverRefugio.ContGatos > 0)
-        //{
-        //    if (VolverRefugio.ContGatos == 1)
-        //    {
-        //        //Perro.transform.SetParent(BackGround.gameObject.transform);
-        //        Instantiate(Gato, CoordG1.position, Quaternion.identity, BackGround.transform);
+        if (VolverRefugio.ContCamaleones > 0)
+        {
+            if (VolverRefugio.ContCamaleones == 1)
+            {
+                //Perro.transform.SetParent(BackGround.gameObject.transform);
+                Instantiate(Camaleon, CoordCaJ1.position, Quaternion.identity, BackGround.transform);
 
 
-        //    }
-        //    else if (VolverRefugio.ContGatos == 2)
-        //    {
-        //        Instantiate(Gato, CoordG1.position, Quaternion.identity, BackGround.transform);
-        //        Instantiate(Gato, CoordG2.position, Quaternion.identity, BackGround.transform);
-        //    }
-        //    else if (VolverRefugio.ContGatos >= 3)
-        //    {
-        //        Instantiate(Gato, CoordG1.position, Quaternion.identity, BackGround.transform);
-        //        Instantiate(Gato, CoordG2.position, Quaternion.identity, BackGround.transform);
-        //        Instantiate(Gato, CoordG3.position, Quaternion.identity, BackGround.transform);
-        //    }
+            }
+            else if (VolverRefugio.ContCamaleones == 2)
+            {
+                Instantiate(Camaleon, CoordCaJ1.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Camaleon, CoordCaJ2.position, Quaternion.identity, BackGround.transform);
+            }
+            else if (VolverRefugio.ContCamaleones >= 3)
+            {
+                Instantiate(Camaleon, CoordCaJ1.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Camaleon, CoordCaJ2.position, Quaternion.identity, BackGround.transform);
+                Instantiate(Camaleon, CoordCaJ3.position, Quaternion.identity, BackGround.transform);
+            }
 
-        //}
-        //else
-        //{
-        //    Gato = null;
-        //}
+        }
+        else
+        {
+            Camaleon = null;
+        }
     }
 }
