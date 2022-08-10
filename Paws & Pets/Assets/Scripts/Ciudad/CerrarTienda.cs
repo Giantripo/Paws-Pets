@@ -5,6 +5,7 @@ using UnityEngine;
 public class CerrarTienda : MonoBehaviour
 {
     public GameObject Tienda;
+    public GameObject Precios;
     void Start()
     {
         
@@ -19,5 +20,6 @@ public class CerrarTienda : MonoBehaviour
     private void OnMouseDown()
     {
         Tienda.SetActive(false);
+        Precios.SetActive(false);
     }
 }

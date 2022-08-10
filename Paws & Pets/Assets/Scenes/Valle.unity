@@ -330,6 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1135782665}
   Panel: {fileID: 0}
+  mapa: {fileID: 0}
 --- !u!65 &77926839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -656,6 +657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1135782665}
   Panel: {fileID: 1907548684}
+  mapa: {fileID: 276958729}
 --- !u!65 &334342171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1137,6 +1139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1135782665}
+  mapa: {fileID: 276958729}
 --- !u!1 &941210617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,7 +1655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254426899}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.67, y: 2.66, z: 0}
+  m_LocalPosition: {x: 20.87, y: 2.91, z: 0}
   m_LocalScale: {x: 0.34778547, y: 0.34778547, z: 0.34778547}
   m_Children: []
   m_Father: {fileID: 1135782667}
@@ -1672,6 +1675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1135782665}
   Panel: {fileID: 0}
+  mapa: {fileID: 276958729}
 --- !u!65 &1254426902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2405,6 +2409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1135782665}
   Panel: {fileID: 1907548684}
+  mapa: {fileID: 276958729}
 --- !u!1 &1907548684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,6 +2757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1135782665}
   "HiloCa\xF1a": {fileID: 0}
+  mapa: {fileID: 0}
 --- !u!1 &2147443102
 GameObject:
   m_ObjectHideFlags: 0

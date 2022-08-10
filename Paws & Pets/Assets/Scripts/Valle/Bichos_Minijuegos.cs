@@ -6,7 +6,7 @@ public class Bichos_Minijuegos : MonoBehaviour
 {
     public GameObject PlayaFondo;
     public static bool b_minijuegoCazainsectos;
-
+    public GameObject mapa;
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class Bichos_Minijuegos : MonoBehaviour
 
         PlayaFondo.transform.position = new Vector2(-22.5f, 0);
         b_minijuegoCazainsectos = true;
-
+        mapa.SetActive(false);
             //Flecha.transform.position = new Vector2(9.5f, -1.78f);
             ////OtraFlecha.transform.position = new Vector2(9.8f, -1.78f);
 

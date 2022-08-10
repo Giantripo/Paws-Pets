@@ -18,7 +18,11 @@ public class Insecto : MonoBehaviour
         {
             if(this.gameObject.tag == "Hoja")
             {
-                MonyeController.money--;
+                if (MonyeController.money >0)
+                {
+                    MonyeController.money--;
+                }
+               
                 Destroy(this.gameObject);
             }
             if(this.gameObject.tag == "Insecto")

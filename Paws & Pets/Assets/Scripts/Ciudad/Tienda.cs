@@ -5,9 +5,11 @@ using UnityEngine;
 public class Tienda : MonoBehaviour
 {
     public GameObject TiendaAbierta;
+    public GameObject Precios;
     void Start()
     {
         TiendaAbierta.SetActive(false);
+        Precios.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,7 +22,7 @@ public class Tienda : MonoBehaviour
     {
         Debug.Log("Abrir_Tienda");
         TiendaAbierta.SetActive(true);
-
+        Precios.SetActive(true);
     }
 
 

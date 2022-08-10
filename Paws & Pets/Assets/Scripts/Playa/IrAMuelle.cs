@@ -6,6 +6,7 @@ public class IrAMuelle : MonoBehaviour
 {
     public GameObject PlayaFondo;
     public GameObject HiloCaña;
+    public GameObject mapa;
     void Start()
     {
         
@@ -28,7 +29,7 @@ public class IrAMuelle : MonoBehaviour
             Debug.Log("Termino todo");
             CañaDePescar.Jugando = false;
             HiloCaña.SetActive(false);
-
+            mapa.SetActive(true);
         }
         else
         {
@@ -36,7 +37,8 @@ public class IrAMuelle : MonoBehaviour
             //Flecha.transform.position = new Vector2(-9.5f, -1.99f);
             ////OtraFlecha.transform.position = new Vector2(9.8f, -80.78f);
             //Flecha.transform.Rotate(new Vector3(0, 180, 0));
-            
+           
+            mapa.SetActive(false);
         }
     }
 }

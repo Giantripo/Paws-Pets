@@ -150,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220633092}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.79, y: 2.72, z: 0}
+  m_LocalPosition: {x: -11.33, y: 2.86, z: 0}
   m_LocalScale: {x: 0.3328673, y: 0.30790225, z: 0.3328673}
   m_Children: []
   m_Father: {fileID: 1309000950}
@@ -234,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1309000948}
   "HiloCa\xF1a": {fileID: 872105674}
+  mapa: {fileID: 1403198326}
 --- !u!1 &248499829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayaFondo: {fileID: 1309000948}
   "HiloCa\xF1a": {fileID: 0}
+  mapa: {fileID: 1403198326}
 --- !u!1 &1234379610
 GameObject:
   m_ObjectHideFlags: 0
