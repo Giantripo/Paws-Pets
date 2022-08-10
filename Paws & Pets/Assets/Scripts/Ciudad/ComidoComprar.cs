@@ -2,29 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BotasComprar : MonoBehaviour
+public class ComidoComprar : MonoBehaviour
 {
-    public static bool Botas;
+    // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-
     private void OnMouseDown()
     {
         if(MonyeController.money >= 5)
         {
-            Botas = true;
             MonyeController.money -= 5;
-            this.gameObject.SetActive(false);
-        }        
+        }                     
     }
-
-
 }

@@ -18,8 +18,12 @@ public class GuantesComprar : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Guantes = true;
-        this.gameObject.SetActive(false);
+        if (MonyeController.money >= 5)
+        {
+            Guantes = true;
+            MonyeController.money -= 5;
+            this.gameObject.SetActive(false);
+        }        
 
         //if (plata >=10)
         //{

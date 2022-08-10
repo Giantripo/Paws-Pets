@@ -14,8 +14,21 @@ public class Insecto : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "modelo_cazainsectos_01" || collision.name == "collider_tope")
+        if(collision.name == "modelo_cazainsectos_01")
         {
+            if(this.gameObject.tag == "Hoja")
+            {
+                MonyeController.money--;
+                Destroy(this.gameObject);
+            }
+            if(this.gameObject.tag == "Insecto")
+            {
+                MonyeController.money++;
+                Destroy(this.gameObject);
+            }            
+        }
+        if (collision.name == "collider_tope")
+        {         
             Destroy(this.gameObject);
         }
     }

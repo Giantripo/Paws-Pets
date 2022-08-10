@@ -22,6 +22,7 @@ public class pezController : MonoBehaviour
             Anzuelo.contPez++;
             Debug.Log(Anzuelo.contPez);
             this.gameObject.SetActive(false);
+            MonyeController.money++;
         }
 
         if (!CañaDePescar.Jugando)

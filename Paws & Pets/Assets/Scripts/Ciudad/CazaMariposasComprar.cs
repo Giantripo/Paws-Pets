@@ -18,7 +18,11 @@ public class CazaMariposasComprar : MonoBehaviour
 
     private void OnMouseDown()
     {
-        CazaMariposas = true;
-        this.gameObject.SetActive(false);
+        if(MonyeController.money >= 5)
+        {
+            CazaMariposas = true;
+            MonyeController.money -= 5;
+            this.gameObject.SetActive(false);
+        }       
     }
 }

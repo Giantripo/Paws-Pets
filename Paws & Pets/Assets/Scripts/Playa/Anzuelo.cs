@@ -50,11 +50,13 @@ public class Anzuelo : MonoBehaviour
         if (other.gameObject.CompareTag("Piedra"))
         {
             AnzueloComprar.ContAnzuelos--;
+            MonyeController.money--;
         }
 
         if (other.gameObject.CompareTag("Zapato"))
         {
             AnzueloComprar.ContAnzuelos--;
+            MonyeController.money--;
         }
 
         //}
