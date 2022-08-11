@@ -28,6 +28,7 @@ public class PerroShelter : MonoBehaviour
         Hambriento = true;
         b_sumadoC = false;
         b_sumadoH = false;
+        BotonesPerroOn = false;
     }
 
     // Update is called once per frame
@@ -61,6 +62,9 @@ public class PerroShelter : MonoBehaviour
 
     private void OnMouseDown()
     {
+        CamaleonShelter.BotonesCamaleonOn = false;
+        CangrejoShelter.BotonesCangrejoOn = false;
+        GatoShelter.BotonesGatoOn = false;
 
         if (BotonesPerroOn)
         {

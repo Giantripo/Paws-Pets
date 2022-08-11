@@ -15,6 +15,7 @@ public class GatoShelter : MonoBehaviour
     {
         botones.SetActive(false);
         Hambriento = true;
+        BotonesGatoOn = false;
     }
 
     // Update is called once per frame
@@ -33,6 +34,9 @@ public class GatoShelter : MonoBehaviour
 
     private void OnMouseDown()
     {
+        CamaleonShelter.BotonesCamaleonOn = false;
+        PerroShelter.BotonesPerroOn = false;
+        CangrejoShelter.BotonesCangrejoOn = false;
 
         if (BotonesGatoOn)
         {
