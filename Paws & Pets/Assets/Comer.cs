@@ -26,22 +26,26 @@ public class Comer : MonoBehaviour
             if (PerroShelter.BotonesPerroOn)
             {
                 PerroShelter.Hambriento = false;
-                Debug.Log("Alimentado");
+                MonyeController.money += 3;
+                //Debug.Log("Alimentado");
             }
             if (GatoShelter.BotonesGatoOn)
             {
                 GatoShelter.Hambriento = false;
-                Debug.Log("Alimentado");
+                MonyeController.money += 3;
+                //Debug.Log("Alimentado");
             }
             if (CangrejoShelter.BotonesCangrejoOn)
             {
                 CangrejoShelter.Hambriento = false;
-                Debug.Log("Alimentado");
+                MonyeController.money += 3;
+                //Debug.Log("Alimentado");
             }
             if (CamaleonShelter.BotonesCamaleonOn)
             {
                 CamaleonShelter.Hambriento = false;
-                Debug.Log("Alimentado");
+                MonyeController.money += 3;
+                //Debug.Log("Alimentado");
             }
             NoComida = false;
         }

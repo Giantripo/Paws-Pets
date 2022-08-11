@@ -16,19 +16,20 @@ public class PerroShelter : MonoBehaviour
     public static bool BotonesPerroOn;
     public GameObject botonComida;
     public GameObject botonEnfermeria;
+    public GameObject botonAdopcion;
     public static bool b_curado;
     public static bool Hambriento;
     public GameObject heridas;
-    private bool b_sumadoH, b_sumadoC;
+    public static bool b_listoAdopcion = false;
 
     // Start is called before the first frame update
     void Start()
     {
         botones.SetActive(false);
         Hambriento = true;
-        b_sumadoC = false;
-        b_sumadoH = false;
         BotonesPerroOn = false;
+        botonAdopcion.SetActive(false);
+        b_listoAdopcion = false;
     }
 
     // Update is called once per frame
@@ -42,6 +43,11 @@ public class PerroShelter : MonoBehaviour
         {
             botonEnfermeria.SetActive(false);
             heridas.SetActive(false);
+        }
+        if (Hambriento == false && b_curado == true)
+        {
+            b_listoAdopcion = true;
+            botonAdopcion.SetActive(true);
         }
         //Recompensa();
     }

@@ -9,14 +9,18 @@ public class CamaleonShelter : MonoBehaviour
     public static bool Hambriento;
     public GameObject botonComida;
     public GameObject botonEnfermeria;
+    public GameObject botonAdopcion;
     public static bool b_curado;
+    public static bool b_listoAdopcion;
     public GameObject heridas;
     void Start()
     {
         botones.SetActive(false);
         Hambriento = true;
         BotonesCamaleonOn = false;
-    }
+        botonAdopcion.SetActive(false);
+        b_listoAdopcion = false;
+}
 
     // Update is called once per frame
     void Update()
@@ -30,6 +34,11 @@ public class CamaleonShelter : MonoBehaviour
         {
             botonEnfermeria.SetActive(false);
             heridas.SetActive(false);
+        }
+        if (Hambriento == false && b_curado == true)
+        {
+            botonAdopcion.SetActive(true);
+            b_listoAdopcion = true;
         }
     }
 
