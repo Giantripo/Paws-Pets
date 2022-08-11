@@ -215,6 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 135324025}
   - component: {fileID: 135324026}
+  - component: {fileID: 135324027}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -275,7 +276,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e381ac1221c461c478a87ba6616009ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -287,6 +288,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &135324027
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135324024}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 7.2, y: 7.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &502980114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,21 +1578,6 @@ Transform:
   m_Father: {fileID: 7788704208600258805}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1543281181106294344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1841876121568700972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab7a1ac1ed254dc4b9f493d7f12e76ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  botones: {fileID: 0}
-  botonComida: {fileID: 0}
-  botonEnfermeria: {fileID: 0}
 --- !u!4 &1620900301700820874
 Transform:
   m_ObjectHideFlags: 0
@@ -1604,7 +1616,6 @@ GameObject:
   - component: {fileID: 2990934309436283930}
   - component: {fileID: 6696158029020024214}
   - component: {fileID: 8110624436489121541}
-  - component: {fileID: 1543281181106294344}
   m_Layer: 0
   m_Name: cangrejo_herido
   m_TagString: Untagged
@@ -1689,7 +1700,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e381ac1221c461c478a87ba6616009ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1712,6 +1723,7 @@ GameObject:
   - component: {fileID: 10622084467915906}
   - component: {fileID: 2543863239641400754}
   - component: {fileID: 8631940119753648637}
+  - component: {fileID: 2960498533568679427}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -1719,6 +1731,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &2960498533568679427
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2960498533568679426}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!212 &2990934309436283930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1758,7 +1796,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5217d221d3f9c5f44a7a7fc937841040, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1838,21 +1876,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3270933446543873482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5573060242094510629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b490c4d36151f468f11925af51fefb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  botones: {fileID: 0}
-  botonComida: {fileID: 0}
-  botonEnfermeria: {fileID: 0}
 --- !u!1 &3293107120607489023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,6 +1887,7 @@ GameObject:
   - component: {fileID: 3440891197375533799}
   - component: {fileID: 7755740687352704748}
   - component: {fileID: 6061267003595668554}
+  - component: {fileID: 3293107120607489024}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -1871,6 +1895,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &3293107120607489024
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293107120607489023}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!4 &3387605686096020597
 Transform:
   m_ObjectHideFlags: 0
@@ -1913,6 +1963,7 @@ GameObject:
   - component: {fileID: 1542105602654436546}
   - component: {fileID: 102302622930681464}
   - component: {fileID: 1454269389456416345}
+  - component: {fileID: 3455299054754007889}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -1920,6 +1971,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &3455299054754007889
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455299054754007888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &3781997249244808535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,6 +2075,7 @@ GameObject:
   - component: {fileID: 7785606396850828795}
   - component: {fileID: 7521784325374590329}
   - component: {fileID: 1879012417979489301}
+  - component: {fileID: 3972088320815144610}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -2005,6 +2083,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &3972088320815144610
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3972088320815144609}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!65 &4118954129827529410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2057,7 +2161,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e381ac1221c461c478a87ba6616009ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2120,7 +2224,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e381ac1221c461c478a87ba6616009ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2385,7 +2489,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8bf7a90b5c285774d997aa2e062f7a50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2423,6 +2527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620900301700820874}
   - component: {fileID: 4921289182407246336}
+  - component: {fileID: 5528461020841728423}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -2430,6 +2535,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &5528461020841728423
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528461020841728422}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 7.2, y: 7.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &5573060242094510629
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,7 +2573,6 @@ GameObject:
   - component: {fileID: 7749112251202842254}
   - component: {fileID: 7798223456132775721}
   - component: {fileID: 8886037489486133770}
-  - component: {fileID: 3270933446543873482}
   m_Layer: 0
   m_Name: camaleon_herido
   m_TagString: Untagged
@@ -2473,6 +2603,7 @@ GameObject:
   - component: {fileID: 1478544723255239473}
   - component: {fileID: 6657321103394910827}
   - component: {fileID: 8440483969513486783}
+  - component: {fileID: 6423713522676929407}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -2480,6 +2611,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &6423713522676929407
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423713522676929406}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &6562835990858385009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,6 +2647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2519074875614256501}
   - component: {fileID: 4386435195554286492}
+  - component: {fileID: 6562835990858385010}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -2497,6 +2655,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &6562835990858385010
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6562835990858385009}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 7.2, y: 7.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!65 &6622051916551640661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2632,6 +2816,7 @@ GameObject:
   - component: {fileID: 273673652245524370}
   - component: {fileID: 4195028586569978682}
   - component: {fileID: 1840241625998000130}
+  - component: {fileID: 7234035461140338523}
   m_Layer: 0
   m_Name: Herida
   m_TagString: Herida
@@ -2639,6 +2824,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &7234035461140338523
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7234035461140338522}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!212 &7521784325374590329
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2700,7 +2911,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7788704208600258805}
   - component: {fileID: 269094835855372835}
-  - component: {fileID: 8353619903458132771}
   - component: {fileID: 4118954129827529410}
   - component: {fileID: 4949584791172532058}
   m_Layer: 0
@@ -2778,7 +2988,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8654ad393a79e3c46b69fce4ea108a99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2829,7 +3039,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8bf7a90b5c285774d997aa2e062f7a50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2901,21 +3111,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.6120496, y: 5.7421265, z: 0.20000002}
   m_Center: {x: -0.05802264, y: -0.013049124, z: 0}
---- !u!114 &8353619903458132771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537134951512095378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb651142e4c9a744b9842f16af99db89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  botones: {fileID: 0}
-  botonComida: {fileID: 0}
-  botonEnfermeria: {fileID: 0}
 --- !u!114 &8440483969513486783
 MonoBehaviour:
   m_ObjectHideFlags: 0
