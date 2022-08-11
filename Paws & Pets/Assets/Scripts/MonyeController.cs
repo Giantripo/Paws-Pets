@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MonyeController : MonoBehaviour
 {
-    public static float money;
+    public static float money=5;
     public Text txt_cantMonedas;
     void Start()
     {       

@@ -9,6 +9,9 @@ public class Adopcion : MonoBehaviour
     public GameObject panelExito, panelFracaso;
 
     public Transform PerroDestruir, GatoD, CamaleonD, CanD;
+
+    public bool PerroAdoptado=false;
+    //public bool GatoAdoptado=false;
     void Start()
     {
         panelExito.SetActive(false);
@@ -41,6 +44,7 @@ public class Adopcion : MonoBehaviour
         else
         {
             panelFracaso.SetActive(true);
+            panelExito.SetActive(false);
         }
     }
 
@@ -55,22 +59,34 @@ public class Adopcion : MonoBehaviour
         else
         {
             panelFracaso.SetActive(true);
+            panelExito.SetActive(false);
         }
     }
 
     public void AdoptarPerro()
     {
+        if (PerroAdoptado)
+        {
+            panelFracaso.SetActive(true);
+            panelExito.SetActive(false);
+        }
+
         if (PerroShelter.b_listoAdopcion == true)
         {
             panelExito.SetActive(true);
             PerroDestruir.gameObject.SetActive(false);
             VolverRefugio.ContPerros--;
+            PerroAdoptado = true;
             //Destroy(PerroDestruir.gameObject);
         }
-        else
-        {
-            panelFracaso.SetActive(true);
-        }
+        //else
+        //{
+        //    panelFracaso.SetActive(true);
+        //    panelExito.SetActive(false);
+        //}
+
+       
+      
     }
 
     public void AdoptarGato()
@@ -84,6 +100,7 @@ public class Adopcion : MonoBehaviour
         else
         {
             panelFracaso.SetActive(true);
+            panelExito.SetActive(false);
         }
     }    
 }
