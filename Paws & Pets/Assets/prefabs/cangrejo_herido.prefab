@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 7810482433323691348}
   - component: {fileID: 6645234380613623528}
   - component: {fileID: 7678557606206460107}
+  - component: {fileID: 8880551174430926364}
   m_Layer: 0
   m_Name: adopcion_icon
   m_TagString: Untagged
@@ -366,7 +367,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 57c1c976b2580e043b3716786a5b667a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -403,6 +404,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5a0f5d0382f834b80a1b8cbfb2230e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &8880551174430926364
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2389800549923685681}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2891214985471090186
 GameObject:
   m_ObjectHideFlags: 0

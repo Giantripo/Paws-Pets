@@ -13,7 +13,11 @@ public class GuantesComprar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Guantes==true)
+        {
+            this.gameObject.SetActive(false);
+        }
+
     }
 
     private void OnMouseDown()
@@ -22,7 +26,7 @@ public class GuantesComprar : MonoBehaviour
         {
             Guantes = true;
             MonyeController.money -= 5;
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
         }        
 
         //if (plata >=10)
