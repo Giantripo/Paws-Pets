@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1669431081622330473}
   - component: {fileID: 6295263926004855536}
-  - component: {fileID: 2827760961243802160}
   - component: {fileID: 8936271070717498996}
   - component: {fileID: 5683062071991530628}
   m_Layer: 0
@@ -85,22 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!54 &2827760961243802160
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45703001559122630}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &8936271070717498996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -421,7 +404,6 @@ GameObject:
   - component: {fileID: 3145292134675839507}
   - component: {fileID: 5342122877729209608}
   - component: {fileID: 3662407224653410710}
-  - component: {fileID: 1676871025265327510}
   - component: {fileID: 5994619771434086911}
   m_Layer: 0
   m_Name: "enfermer\xEDa_icon"
@@ -508,22 +490,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.9999995, y: 4.9999995, z: 0.19999999}
   m_Center: {x: 0, y: -0.00000011920929, z: -0.00000004507865}
---- !u!54 &1676871025265327510
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4375415967385415101}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5994619771434086911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,7 +621,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4113746487043631205}
   - component: {fileID: 7719043562913172090}
-  - component: {fileID: 3105737272733246110}
   - component: {fileID: 3248668441169870398}
   m_Layer: 0
   m_Name: adopcion_icon
@@ -729,22 +694,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!54 &3105737272733246110
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7745359925196298063}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &3248668441169870398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -861,6 +810,7 @@ MonoBehaviour:
   botones: {fileID: 1720936738630193930}
   botonComida: {fileID: 45703001559122630}
   botonEnfermeria: {fileID: 4375415967385415101}
+  botonAdopcion: {fileID: 0}
   heridas: {fileID: 3135917851247545825}
 --- !u!65 &4523390621867098357
 BoxCollider:

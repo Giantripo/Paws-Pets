@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8923450701029640074}
   - component: {fileID: 5847548643134106446}
   - component: {fileID: 151824237558258332}
-  - component: {fileID: 7545901952852752445}
   - component: {fileID: 3373885897962695522}
   m_Layer: 0
   m_Name: comida_icon
@@ -98,22 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0.000000031313903}
---- !u!54 &7545901952852752445
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635440717477918695}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3373885897962695522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +287,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9179064392393334963}
   - component: {fileID: 7810482433323691348}
-  - component: {fileID: 6419279327335079968}
   - component: {fileID: 6645234380613623528}
   - component: {fileID: 7678557606206460107}
   m_Layer: 0
@@ -379,22 +361,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!54 &6419279327335079968
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2389800549923685681}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &6645234380613623528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -760,7 +726,6 @@ GameObject:
   - component: {fileID: 6242769600734665289}
   - component: {fileID: 3379858239406408272}
   - component: {fileID: 1330522528984133003}
-  - component: {fileID: 7153096722750860274}
   - component: {fileID: 1256100315381807958}
   m_Layer: 0
   m_Name: "enfermer\xEDa_icon"
@@ -847,22 +812,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0.000000031313903}
---- !u!54 &7153096722750860274
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8111420437420016745}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1256100315381807958
 MonoBehaviour:
   m_ObjectHideFlags: 0
