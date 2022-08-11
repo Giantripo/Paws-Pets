@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class GoToAdopcion : MonoBehaviour
 {
-    public GameObject panel_Adopcion;
-    public GameObject flechaShelter;
+    //public GameObject panel_Adopcion;
+    //public GameObject flechaShelter;
+    public static bool b_goToAdopcion;
     void Start()
     {
-        panel_Adopcion.SetActive(false);
+        b_goToAdopcion = false;
     }
 
     // Update is called once per frame
@@ -18,7 +19,6 @@ public class GoToAdopcion : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        panel_Adopcion.SetActive(true);
-        flechaShelter.SetActive(false);
+        b_goToAdopcion = true;
     }
 }

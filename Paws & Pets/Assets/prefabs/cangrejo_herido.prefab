@@ -275,7 +275,7 @@ MonoBehaviour:
   botones: {fileID: 9210318930458462659}
   botonComida: {fileID: 1635440717477918695}
   botonEnfermeria: {fileID: 8111420437420016745}
-  botonAdopcion: {fileID: 0}
+  botonAdopcion: {fileID: 2389800549923685681}
   heridas: {fileID: 1781815747817957673}
 --- !u!1 &2389800549923685681
 GameObject:
@@ -386,8 +386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5a0f5d0382f834b80a1b8cbfb2230e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel_Adopcion: {fileID: 0}
-  flechaShelter: {fileID: 0}
 --- !u!1 &2891214985471090186
 GameObject:
   m_ObjectHideFlags: 0

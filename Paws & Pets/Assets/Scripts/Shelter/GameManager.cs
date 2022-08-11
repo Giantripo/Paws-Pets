@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
 
     private float contCartel;
 
+    public GameObject panel_Adopcion;
+    //public GameObject flechaShelterIzq, flechaShelterDer;
+
     void Start()
     {
         Advertencia.SetActive(false);
@@ -38,6 +41,8 @@ public class GameManager : MonoBehaviour
         PerroNuevo();
         CangrejoNuevo();
         CamaleonNuevo();
+        panel_Adopcion.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -55,7 +60,8 @@ public class GameManager : MonoBehaviour
             }
           
         }
-      
+        Adopcion();
+
     }
 
     public void PerroNuevo()
@@ -175,6 +181,16 @@ public class GameManager : MonoBehaviour
         else
         {
             Camaleon = null;
+        }
+    }
+
+    public void Adopcion()
+    {
+        if(GoToAdopcion.b_goToAdopcion == true)
+        {
+            panel_Adopcion.SetActive(true);
+            //flechaShelterIzq.SetActive(false);
+            //flechaShelterDer.SetActive(false);
         }
     }
 }

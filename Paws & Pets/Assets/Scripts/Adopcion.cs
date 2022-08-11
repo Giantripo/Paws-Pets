@@ -16,10 +16,10 @@ public class Adopcion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AdoptarCangrejo();
-        AdoptarCamaleon();
-        AdoptarPerro();
-        AdoptarGato();        
+        //AdoptarCangrejo();
+        //AdoptarCamaleon();
+        //AdoptarPerro();
+        //AdoptarGato();        
     }    
     
     public void AdoptarCangrejo()
