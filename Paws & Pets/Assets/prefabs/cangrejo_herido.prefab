@@ -127,6 +127,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   advertencia: {fileID: 3862688614933967538, guid: b14d19a2b4e1e5d4ba92fa0e2eb56b39, type: 3}
+--- !u!1 &1781815747817957673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5661282621999051285}
+  m_Layer: 0
+  m_Name: Heridas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5661282621999051285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781815747817957673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 398959401566718327}
+  - {fileID: 3056923373834757906}
+  - {fileID: 459533669739944551}
+  m_Father: {fileID: 7822714504360438411}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2027595504656080857
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,9 +191,7 @@ Transform:
   m_LocalPosition: {x: -52.55271, y: -0.17142856, z: 0}
   m_LocalScale: {x: 0.20015033, y: 0.20015033, z: 0.20015028}
   m_Children:
-  - {fileID: 398959401566718327}
-  - {fileID: 3056923373834757906}
-  - {fileID: 459533669739944551}
+  - {fileID: 5661282621999051285}
   - {fileID: 3270710775264632443}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -259,6 +290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botones: {fileID: 9210318930458462659}
   botonComida: {fileID: 1635440717477918695}
+  botonEnfermeria: {fileID: 8111420437420016745}
+  heridas: {fileID: 1781815747817957673}
 --- !u!1 &2891214985471090186
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3056923373834757906}
   - component: {fileID: 7930050442546354969}
-  - component: {fileID: 5886536719570405823}
+  - component: {fileID: 4994006008628299551}
   m_Layer: 0
   m_Name: Herida2
   m_TagString: Untagged
@@ -285,10 +318,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2891214985471090186}
   m_LocalRotation: {x: -0, y: -0, z: 0.13380119, w: 0.9910083}
-  m_LocalPosition: {x: -1.46, y: -1, z: 0}
-  m_LocalScale: {x: 0.21854763, y: 0.21854763, z: 0.21854767}
+  m_LocalPosition: {x: -1.460008, y: -1, z: 0}
+  m_LocalScale: {x: 0.21854764, y: 0.21854764, z: 0.21854767}
   m_Children: []
-  m_Father: {fileID: 7822714504360438411}
+  m_Father: {fileID: 5661282621999051285}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7930050442546354969
@@ -342,18 +375,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5886536719570405823
-MonoBehaviour:
+--- !u!61 &4994006008628299551
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2891214985471090186}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 139832492937e2e42a070afc1066b52d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &3222627313258150903
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398959401566718327}
   - component: {fileID: 2801592942070083655}
-  - component: {fileID: 8243293771157986312}
+  - component: {fileID: 8741652566727756700}
   m_Layer: 0
   m_Name: Herida1
   m_TagString: Untagged
@@ -380,10 +427,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3222627313258150903}
   m_LocalRotation: {x: -0, y: -0, z: 0.13380119, w: 0.9910083}
-  m_LocalPosition: {x: 1.72, y: -0.12, z: 0}
+  m_LocalPosition: {x: 1.7199941, y: -0.11999998, z: 0}
   m_LocalScale: {x: 0.25694862, y: 0.25694862, z: 0.25694868}
   m_Children: []
-  m_Father: {fileID: 7822714504360438411}
+  m_Father: {fileID: 5661282621999051285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2801592942070083655
@@ -437,18 +484,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8243293771157986312
-MonoBehaviour:
+--- !u!61 &8741652566727756700
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3222627313258150903}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 139832492937e2e42a070afc1066b52d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &7046069771494580911
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 459533669739944551}
   - component: {fileID: 4583366487792215759}
-  - component: {fileID: 2028033592796100087}
+  - component: {fileID: 1976007657096586468}
   m_Layer: 0
   m_Name: Herida3
   m_TagString: Untagged
@@ -475,10 +536,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7046069771494580911}
   m_LocalRotation: {x: -0, y: -0, z: 0.13380119, w: 0.9910083}
-  m_LocalPosition: {x: -0.02, y: 0.76, z: 0}
-  m_LocalScale: {x: 0.16155536, y: 0.16155536, z: 0.16155541}
+  m_LocalPosition: {x: -0.019993061, y: 0.76, z: 0}
+  m_LocalScale: {x: 0.16155538, y: 0.16155538, z: 0.16155541}
   m_Children: []
-  m_Father: {fileID: 7822714504360438411}
+  m_Father: {fileID: 5661282621999051285}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4583366487792215759
@@ -532,18 +593,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2028033592796100087
-MonoBehaviour:
+--- !u!61 &1976007657096586468
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7046069771494580911}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 139832492937e2e42a070afc1066b52d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &8111420437420016745
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,5 +775,5 @@ Transform:
   - {fileID: 6242769600734665289}
   - {fileID: 8923450701029640074}
   m_Father: {fileID: 7822714504360438411}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

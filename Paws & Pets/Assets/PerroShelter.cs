@@ -15,14 +15,19 @@ public class PerroShelter : MonoBehaviour
     public GameObject botones;
     public static bool BotonesPerroOn;
     public GameObject botonComida;
-
+    public GameObject botonEnfermeria;
+    public static bool b_curado;
     public static bool Hambriento;
-   
+    public GameObject heridas;
+    private bool b_sumadoH, b_sumadoC;
+
     // Start is called before the first frame update
     void Start()
     {
         botones.SetActive(false);
         Hambriento = true;
+        b_sumadoC = false;
+        b_sumadoH = false;
     }
 
     // Update is called once per frame
@@ -32,8 +37,27 @@ public class PerroShelter : MonoBehaviour
         {
             botonComida.SetActive(false);
         }
-
+        if (b_curado == true)
+        {
+            botonEnfermeria.SetActive(false);
+            heridas.SetActive(false);
+        }
+        //Recompensa();
     }
+
+    //public void Recompensa()
+    //{
+    //    if(b_curado == true && b_sumadoC == false)
+    //    {
+    //        MonyeController.money += 10;
+    //        b_sumadoC = true;
+    //    }
+    //    if(Hambriento == false && b_sumadoH == false)
+    //    {
+    //        MonyeController.money += 3;
+    //        b_sumadoH = true;
+    //    }
+    //}
 
     private void OnMouseDown()
     {
@@ -49,18 +73,7 @@ public class PerroShelter : MonoBehaviour
             botones.SetActive(true);
             BotonesPerroOn = true;
 
-        }
-      
-
-
-
-
-
-
-
-
-
-
+        }     
 
         //perro1 = true;
         //SceneManager.LoadScene(6);
@@ -89,5 +102,5 @@ public class PerroShelter : MonoBehaviour
         //    PerroCuracion = true;
 
         //}
-    }
+    }    
 }

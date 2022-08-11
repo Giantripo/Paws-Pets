@@ -9,6 +9,7 @@ TagManager:
   - Pez
   - Zapato
   - Piedra
+  - Herida
   layers:
   - Default
   - TransparentFX

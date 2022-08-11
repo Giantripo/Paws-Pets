@@ -10,4 +10,5 @@ public class IrEnfermeria : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
+
 }

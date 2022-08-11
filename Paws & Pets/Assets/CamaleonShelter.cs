@@ -8,6 +8,9 @@ public class CamaleonShelter : MonoBehaviour
     public static bool BotonesCamaleonOn;
     public static bool Hambriento;
     public GameObject botonComida;
+    public GameObject botonEnfermeria;
+    public static bool b_curado;
+    public GameObject heridas;
     void Start()
     {
         botones.SetActive(false);
@@ -20,6 +23,12 @@ public class CamaleonShelter : MonoBehaviour
         if (!Hambriento)
         {
             botonComida.SetActive(false);
+
+        }
+        if (b_curado == true)
+        {
+            botonEnfermeria.SetActive(false);
+            heridas.SetActive(false);
         }
     }
 
@@ -36,5 +45,5 @@ public class CamaleonShelter : MonoBehaviour
             botones.SetActive(true);
             BotonesCamaleonOn = true;
         }
-    }
+    }    
 }

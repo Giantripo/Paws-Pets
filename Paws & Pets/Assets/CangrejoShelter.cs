@@ -8,6 +8,9 @@ public class CangrejoShelter : MonoBehaviour
     public static bool BotonesCangrejoOn;
     public static bool Hambriento;
     public GameObject botonComida;
+    public GameObject botonEnfermeria;
+    public static bool b_curado;
+    public GameObject heridas;
     void Start()
     {
         botones.SetActive(false);
@@ -20,6 +23,11 @@ public class CangrejoShelter : MonoBehaviour
         if (!Hambriento)
         {
             botonComida.SetActive(false);
+        }
+        if(b_curado == true)
+        {
+            botonEnfermeria.SetActive(false);
+            heridas.SetActive(false);
         }
     }
 
@@ -37,4 +45,5 @@ public class CangrejoShelter : MonoBehaviour
             BotonesCangrejoOn = true;
         }
     }
+    
 }

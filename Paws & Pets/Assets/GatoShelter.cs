@@ -8,6 +8,9 @@ public class GatoShelter : MonoBehaviour
     public static bool BotonesGatoOn;
     public static bool Hambriento;
     public GameObject botonComida;
+    public GameObject botonEnfermeria;
+    public static bool b_curado;
+    public GameObject heridas;
     void Start()
     {
         botones.SetActive(false);
@@ -19,7 +22,12 @@ public class GatoShelter : MonoBehaviour
     {
         if (!Hambriento)
         {
-            botonComida.SetActive(false);
+            botonComida.SetActive(false);            
+        }
+        if (b_curado == true)
+        {
+            botonEnfermeria.SetActive(false);
+            heridas.SetActive(false);            
         }
     }
 
@@ -37,4 +45,5 @@ public class GatoShelter : MonoBehaviour
             BotonesGatoOn = true;
         }
     }
+    
 }
