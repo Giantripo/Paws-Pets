@@ -6,6 +6,8 @@ public class CerrarTienda : MonoBehaviour
 {
     public GameObject Tienda;
     public GameObject Precios;
+    public GameObject Flecha1;
+    public GameObject Flecha2;
     void Start()
     {
         
@@ -21,5 +23,7 @@ public class CerrarTienda : MonoBehaviour
     {
         Tienda.SetActive(false);
         Precios.SetActive(false);
+        Flecha1.SetActive(true);
+        Flecha2.SetActive(true);
     }
 }

@@ -1952,6 +1952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tienda: {fileID: 533118915}
   Precios: {fileID: 2105789762}
+  Flecha1: {fileID: 1269110142}
+  Flecha2: {fileID: 1695383265}
 --- !u!65 &854640614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3604,6 +3606,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TiendaAbierta: {fileID: 533118915}
   Precios: {fileID: 2105789762}
+  Flecha1: {fileID: 1269110142}
+  Flecha2: {fileID: 1695383265}
 --- !u!65 &1682542593
 BoxCollider:
   m_ObjectHideFlags: 0
