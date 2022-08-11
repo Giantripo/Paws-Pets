@@ -6,7 +6,7 @@ public class CamaleonShelter : MonoBehaviour
 {
     public GameObject botones;
     public static bool BotonesCamaleonOn;
-    public static bool Hambriento;
+    public static bool Hambriento = true;
     public GameObject botonComida;
     public GameObject botonEnfermeria;
     public GameObject botonAdopcion;
@@ -16,7 +16,7 @@ public class CamaleonShelter : MonoBehaviour
     void Start()
     {
         botones.SetActive(false);
-        Hambriento = true;
+        
         BotonesCamaleonOn = false;
         botonAdopcion.SetActive(false);
         b_listoAdopcion = false;

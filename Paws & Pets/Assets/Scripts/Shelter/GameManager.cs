@@ -189,6 +189,7 @@ public class GameManager : MonoBehaviour
         if(GoToAdopcion.b_goToAdopcion == true)
         {
             panel_Adopcion.SetActive(true);
+            GoToAdopcion.b_goToAdopcion = false;
             //flechaShelterIzq.SetActive(false);
             //flechaShelterDer.SetActive(false);
         }

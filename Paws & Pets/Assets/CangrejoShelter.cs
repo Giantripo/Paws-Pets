@@ -6,7 +6,7 @@ public class CangrejoShelter : MonoBehaviour
 {
     public GameObject botones;
     public static bool BotonesCangrejoOn;
-    public static bool Hambriento;
+    public static bool Hambriento = true;
     public GameObject botonComida;
     public GameObject botonEnfermeria;
     public GameObject botonAdopcion;
@@ -17,7 +17,7 @@ public class CangrejoShelter : MonoBehaviour
     {
         botones.SetActive(false);
         botonAdopcion.SetActive(false);
-        Hambriento = true;
+      
         BotonesCangrejoOn = false;
         b_listoAdopcion = false;
     }

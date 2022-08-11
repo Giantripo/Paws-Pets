@@ -18,7 +18,7 @@ public class PerroShelter : MonoBehaviour
     public GameObject botonEnfermeria;
     public GameObject botonAdopcion;
     public static bool b_curado;
-    public static bool Hambriento;
+    public static bool Hambriento=true;
     public GameObject heridas;
     public static bool b_listoAdopcion = false;
 
@@ -26,7 +26,7 @@ public class PerroShelter : MonoBehaviour
     void Start()
     {
         botones.SetActive(false);
-        Hambriento = true;
+    
         BotonesPerroOn = false;
         botonAdopcion.SetActive(false);
         b_listoAdopcion = false;
